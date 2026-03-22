@@ -1,0 +1,26 @@
+{
+  "name": "sololingo",
+  "private": true,
+  "scripts": {
+    "dev:android": "pnpm --filter @sololingo/mobile android",
+    "dev:ios": "pnpm --filter @sololingo/mobile ios",
+    "dev:api": "pnpm --filter @sololingo/api dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.30.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
