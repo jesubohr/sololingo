@@ -1,9 +1,6 @@
-import { Text, View } from "react-native"
+// apps/mobile/app/index.tsx
+import { Redirect } from "expo-router"
 
-export default function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Fala, Brasil!</Text>
-    </View>
-  )
+export default function Index() {
+  return <Redirect href="/(auth)/splash" />
 }
