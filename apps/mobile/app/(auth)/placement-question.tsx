@@ -64,7 +64,7 @@ export default function PlacementQuestionScreen() {
       if (currentIndex + 1 < QUESTIONS.length) {
         setCurrentIndex((prev) => prev + 1)
         setSelected(null)
-        if (isCorrect) setScore(newScore)
+        setScore(newScore)
       } else {
         if (isCorrect) {
           router.replace({
