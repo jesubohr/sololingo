@@ -3,7 +3,6 @@ import { StyleSheet, Text, View } from "react-native"
 import { useRouter } from "expo-router"
 import { ScreenContainer } from "../../src/components/layout/ScreenContainer"
 import { Button } from "../../src/components/ui/Button"
-import { fontFamilies } from "../../src/theme/fonts"
 import { colors, radii, spacing } from "../../src/theme/tokens"
 import { typography } from "../../src/theme/typography"
 
