@@ -38,6 +38,7 @@ export default function LoginScreen() {
     if (!validate()) return
     // TODO: integrate with auth backend
     console.log("Login:", { email, password })
+    router.replace("/(auth)/placement-intro")
   }
 
   return (

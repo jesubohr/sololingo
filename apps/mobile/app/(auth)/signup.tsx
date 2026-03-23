@@ -46,6 +46,7 @@ export default function SignUpScreen() {
     if (!validate()) return
     // TODO: integrate with auth backend
     console.log("Sign up:", { name, email, password })
+    router.replace("/(auth)/placement-intro")
   }
 
   return (
